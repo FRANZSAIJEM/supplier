@@ -28,7 +28,7 @@ const {hidden} = defineProps (['hidden'])
      }" style="width: 45px; margin-left: -13px; text-align: center; box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.159); padding: 10px; border-radius: 5px;" class="fa-solid fa-users"></i> <span :hidden="hidden">Clients</span>
         </Link>
 
-        <Link :href="route('clients')" :active="route().current('clients')">
+        <Link :href="route('supplier')" :active="route().current('supplier')">
             <i :class="{
         'bg-red-600' : Color == 'red',
         'bg-blue-600' : Color == 'blue',
