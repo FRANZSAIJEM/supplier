@@ -1,9 +1,7 @@
 <script setup>
 import Layout from '@/Layouts/Layout.vue';
-import SupplierCard from '@/Components/SupplierCard.vue';
+import ClientCard from '@/Components/ClientCard.vue';
 import { Head } from '@inertiajs/vue3';
-import { Link } from '@inertiajs/vue3';
-
 // import { ref, inject } from 'vue';
 
 // console.log(Color)
@@ -19,18 +17,14 @@ import { Link } from '@inertiajs/vue3';
                 <div class="">
                     <!-- Card here -->
                     <div class="p-6 text-gray-900">
-                        <h1 class="shadow-md rounded-sm p-5 justify-between flex"><b><i class="fa-solid fa-boxes-packing"></i> Supplier</b>
-                            <Link :href="route('suppliers.create')" :active="route().current('suppliers.create')">
-                                <span :hidden="hidden" class="bg-slate-100 hover:bg-slate-200 duration-100 p-3 shadow-md rounded-md"> <i class="fa fa-plus"></i> Create</span>
-                            </Link>
+                        <h1 class="shadow-md rounded-sm p-5 justify-between flex"><b><i class="fa-solid fa-edit"></i> Edit Supplier</b>
                         </h1>
-                        <SupplierCard />
+
 
                     </div>
                 </div>
             </div>
         </div>
-
 
     </Layout>
 </template>

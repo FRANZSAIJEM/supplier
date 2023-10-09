@@ -13,7 +13,14 @@ import { Head } from '@inertiajs/vue3';
 
     <Layout>
         <div class="">
-            <button class="bg-slate-900">hahah</button>
+            <div class="">
+                <div class="">
+                    <!-- Card here -->
+                    <div class="p-6 text-gray-900">
+                        <h1 class="shadow-md rounded-sm p-5"><i class="fa-solid fa-cart-plus"></i> Create Supplier</h1>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </Layout>

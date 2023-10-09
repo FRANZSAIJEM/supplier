@@ -44,13 +44,18 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
+    Route::get('/supplier', [SupplierController::class, 'index'])->name('supplier');
 
 
     Route::middleware('can:manage-suppliers')->group(function(){
-        Route::get('/supplier', [SupplierController::class, 'index'])->name('supplier');
         Route::post('/suppliers', [SupplierController::class, 'store']);
-        Route::get('/suppliers/create', [SupplierController::class, 'create']);
-        Route::post('/suppliers/{supplier}', [SupplierController::class, 'edit'])->name('suppliers.edit');
+        Route::get('/suppliers/create', [SupplierController::class, 'create'])->name('suppliers.create');
+        Route::get('/suppliers/edit', [SupplierController::class, 'edit'])->name('suppliers.edit');
+        Route::get('/suppliers/view', [SupplierController::class, 'view'])->name('suppliers.view');
+        Route::get('/suppliers/delete', [SupplierController::class, 'delete'])->name('suppliers.delete');
+
+        // Route::post('/suppliers/{supplier}', [SupplierController::class, 'edit'])->name('suppliers.edit');
+
     });
 });
 

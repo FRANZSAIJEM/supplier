@@ -27,7 +27,7 @@ const Color = inject('color')
                     'bg-red-600' : Color == 'red',
                     'bg-blue-600' : Color == 'blue',
                     'bg-green-600' : Color == 'green',
-                }" class="border-2 border-gray-900 text-white border-solid rounded-md p-5">Click Me?</button>
+                }" class="shadow-md text-white border-solid rounded-md p-3">Click Me?</button>
             </div>
         </div>
 </template>

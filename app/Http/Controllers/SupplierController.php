@@ -13,4 +13,7 @@ class SupplierController extends Controller
     public function create(){
         return Inertia('Create');
     }
+    public function edit(){
+        return Inertia('Edit');
+    }
 }

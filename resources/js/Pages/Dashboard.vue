@@ -1,20 +1,38 @@
 <script setup>
 import Layout from '@/Layouts/Layout.vue';
+import ClientCard from '@/Components/ClientCard.vue';
 import { Head } from '@inertiajs/vue3';
+// import { ref, inject } from 'vue';
+
+// console.log(Color)
 </script>
 
+
 <template>
-    <Head title="Dashboard" />
+    <Head title="Clients" />
 
     <Layout>
+        <div class="">
+            <div class="">
+                <div class="">
+                    <!-- Card here -->
+                    <div class="p-6 text-gray-900">
+                        <h1 class="shadow-md rounded-sm p-5 justify-between flex"><b><i class="fa-solid fa-home"></i> Dashboard</b>
 
+                        </h1>
 
-        <div class="py-12">
-            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                    <div class="p-6 text-gray-900">You're logged in!</div>
+                    </div>
                 </div>
             </div>
         </div>
+
     </Layout>
 </template>
+
+<script>
+export default {
+    props: {
+        clients: Object, // Define the clients prop type as an object
+    },
+};
+</script>
